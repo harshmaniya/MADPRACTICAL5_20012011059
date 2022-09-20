@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
             stop()
         }
     }
+
     private fun play(){
         Intent(applicationContext,MediaService::class.java).putExtra(
             MediaService.DATA_KEY,MediaService.DATA_VALUE).apply { startService(this) }
